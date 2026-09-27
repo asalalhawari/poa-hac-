@@ -12,9 +12,27 @@ React + TypeScript wireframe application implementing the logic of the HAC Signa
 - Human reviewer decision workspace
 - Data-quality checks and patient timeline
 
-## Run
+## Run (Frontend + Backend)
+
+### macOS / Linux / Git Bash
 ```bash
-npm install
+./start.sh
+```
+*(Press `Ctrl+C` in the terminal to gracefully stop both services.)*
+
+### Windows (Command Prompt or PowerShell)
+Double-click `start.bat` or run:
+```cmd
+start.bat
+```
+*(Launches the Backend and Frontend in separate labeled console windows.)*
+
+### Manual Run
+```bash
+# Terminal 1 (Backend API on Port 3001)
+npm run server
+
+# Terminal 2 (Frontend UI on Port 5173)
 npm run dev
 ```
 

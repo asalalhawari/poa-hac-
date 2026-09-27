@@ -5,11 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "tsx watch server/server.ts",
+    "server:test": "tsx --test server/__tests__/hacScoring.test.ts",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
@@ -17,6 +21,11 @@
     "recharts": "latest"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
     "typescript": "latest",
     "vite": "latest"
   }
